@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Primary Meta Tags -->
   <meta name="title" content="6D Pose Estimation and 3D Reconstruction of Industrial Physical Twin and Digital Twin Datasets">
   <meta name="description" content="A comprehensive dataset and methodology for 6D pose estimation and 3D reconstruction bridging industrial physical twin and digital twin representations.">
   <meta name="keywords" content="6D pose estimation, 3D reconstruction, digital twin, physical twin, industrial, computer vision, deep learning">
@@ -12,7 +11,6 @@
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="CESI LINEACT">
   <meta property="og:title" content="6D Pose Estimation and 3D Reconstruction of Industrial Physical Twin and Digital Twin Datasets">
@@ -25,7 +23,6 @@
   <meta property="article:tag" content="6D Pose Estimation">
   <meta property="article:tag" content="Digital Twin">
 
-  <!-- Academic/Research Specific -->
   <meta name="citation_title" content="6D Pose Estimation and 3D Reconstruction of Industrial Physical Twin and Digital Twin Datasets">
   <meta name="citation_author" content="Choudhary, Sunil">
   <meta name="citation_author" content="Asfaw, Mickyas-Tamiru">
@@ -35,13 +32,11 @@
   <meta name="citation_author" content="Dupuis, Yohan">
   <meta name="citation_publication_date" content="2024">
 
-  <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
-  <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
@@ -49,15 +44,12 @@
 
   <title>6D Pose Estimation and 3D Reconstruction of Industrial Physical Twin and Digital Twin Datasets</title>
 
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
 
-  <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
-  <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -73,13 +65,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
 
-  <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -87,12 +77,12 @@
     "headline": "6D Pose Estimation and 3D Reconstruction of Industrial Physical Twin and Digital Twin Datasets",
     "description": "A comprehensive dataset and methodology for 6D pose estimation and 3D reconstruction bridging industrial physical twin and digital twin representations.",
     "author": [
-      { "@type": "Person", "name": "Sunil Choudhary", "affiliation": { "@type": "Organization", "name": "CESI LINEACT" } },
-      { "@type": "Person", "name": "Mickyas-Tamiru Asfaw", "affiliation": { "@type": "Organization", "name": "CESI LINEACT" } },
-      { "@type": "Person", "name": "Aristide Laignel", "affiliation": { "@type": "Organization", "name": "CESI LINEACT" } },
-      { "@type": "Person", "name": "Nicolas Ragot", "affiliation": { "@type": "Organization", "name": "CESI LINEACT" } },
-      { "@type": "Person", "name": "Vincent Havard", "affiliation": { "@type": "Organization", "name": "CESI LINEACT" } },
-      { "@type": "Person", "name": "Yohan Dupuis", "affiliation": { "@type": "Organization", "name": "CESI LINEACT" } }
+      { "@type": "Person", "name": "Sunil Choudhary",       "affiliation": { "@type": "Organization", "name": "CESI LINEACT" } },
+      { "@type": "Person", "name": "Mickyas-Tamiru Asfaw",  "affiliation": { "@type": "Organization", "name": "CESI LINEACT" } },
+      { "@type": "Person", "name": "Aristide Laignel",      "affiliation": { "@type": "Organization", "name": "CESI LINEACT" } },
+      { "@type": "Person", "name": "Nicolas Ragot",         "affiliation": { "@type": "Organization", "name": "CESI LINEACT" } },
+      { "@type": "Person", "name": "Vincent Havard",        "affiliation": { "@type": "Organization", "name": "CESI LINEACT" } },
+      { "@type": "Person", "name": "Yohan Dupuis",          "affiliation": { "@type": "Organization", "name": "CESI LINEACT" } }
     ],
     "datePublished": "2024-01-01",
     "keywords": ["6D pose estimation", "3D reconstruction", "digital twin", "physical twin", "industrial", "computer vision"],
@@ -109,235 +99,533 @@
     "url": "https://lineact.cesi.fr"
   }
   </script>
+
+  <style>
+    /* ── Pipeline section ── */
+    .pipeline-figure {
+      margin: 2rem auto 0;
+      max-width: 100%;
+    }
+    .pipeline-figure img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    }
+    .pipeline-figure figcaption {
+      margin-top: 0.75rem;
+      font-size: 0.92rem;
+      color: #555;
+      text-align: center;
+    }
+
+    /* ── Step cards under pipeline ── */
+    .step-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .step-card {
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      border-top: 4px solid;
+    }
+    .step-card.calibration  { border-color: #e07b39; }
+    .step-card.collection   { border-color: #3a6fd8; }
+    .step-card.processing   { border-color: #c0497a; }
+    .step-card h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .step-card p {
+      font-size: 0.87rem;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    /* ── Dataset samples grid ── */
+    .samples-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    @media (min-width: 768px) {
+      .samples-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+    .sample-item img {
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .sample-item p {
+      font-size: 0.82rem;
+      color: #555;
+      text-align: center;
+      margin-top: 0.4rem;
+    }
+
+    /* ── Perspectives & Current Works ── */
+    .content-section {
+      padding: 3rem 1.5rem;
+    }
+    .content-section .section-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #1a1a2e;
+    }
+    .perspective-list, .works-list-items {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .perspective-list li, .works-list-items li {
+      display: flex;
+      gap: 0.9rem;
+      align-items: flex-start;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    .perspective-list li:last-child,
+    .works-list-items li:last-child { border-bottom: none; }
+    .item-icon {
+      flex-shrink: 0;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      color: #fff;
+    }
+    .icon-blue   { background: #2563eb; }
+    .icon-green  { background: #16a34a; }
+    .icon-orange { background: #ea580c; }
+    .icon-purple { background: #7c3aed; }
+    .icon-teal   { background: #0d9488; }
+    .item-text strong {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+    .item-text span {
+      font-size: 0.87rem;
+      color: #555;
+      line-height: 1.5;
+    }
+    .status-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+    .badge-ongoing  { background: #dbeafe; color: #1d4ed8; }
+    .badge-planned  { background: #fef9c3; color: #854d0e; }
+    .badge-complete { background: #dcfce7; color: #166534; }
+
+    /* ── BibTeX ── */
+    .bibtex-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .copy-bibtex-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 0.35rem 0.85rem;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .copy-bibtex-btn:hover { background: #e2e8f0; }
+
+    /* ── Scroll-to-top ── */
+    .scroll-to-top {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 999;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .scroll-to-top:hover { background: #1d4ed8; }
+  </style>
 </head>
 <body>
 
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+  <button class="scroll-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
   <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">6D Pose Estimation and 3D Reconstruction of Industrial Physical Twin and Digital Twin Datasets</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="#" target="_blank">Sunil CHOUDHARY</a>,</span>
-              <span class="author-block">
-                <a href="#" target="_blank">Mickyas-Tamiru ASFAW</a>,</span>
-              <span class="author-block">
-                <a href="#" target="_blank">Aristide LAIGNEL</a>,
-              </span>
-              <span class="author-block">
-                <a href="#" target="_blank">Nicolas RAGOT</a>,
-              </span>
-              <span class="author-block">
-                <a href="#" target="_blank">Vincent HAVARD</a>,
-              </span>
-              <span class="author-block">
-                <a href="#" target="_blank">Yohan DUPUIS</a>
-              </span>
-            </div>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">CESI &mdash; CESI LINEACT &nbsp;|&nbsp; FUSION Project</span>
-            </div>
 
+    <!-- ═══════════════════════  HERO  ═══════════════════════ -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
             <div class="column has-text-centered">
-              <div class="publication-links">
-                <span class="link-block">
-                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-database"></i>
+
+              <h1 class="title is-1 publication-title">
+                6D Pose Estimation and 3D Reconstruction of Industrial Physical Twin and Digital Twin Datasets
+              </h1>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><a href="#" target="_blank">Sunil CHOUDHARY</a>,</span>
+                <span class="author-block"><a href="#" target="_blank">Mickyas-Tamiru ASFAW</a>,</span>
+                <span class="author-block"><a href="#" target="_blank">Aristide LAIGNEL</a>,</span>
+                <span class="author-block"><a href="#" target="_blank">Nicolas RAGOT</a>,</span>
+                <span class="author-block"><a href="#" target="_blank">Vincent HAVARD</a>,</span>
+                <span class="author-block"><a href="#" target="_blank">Yohan DUPUIS</a></span>
+              </div>
+
+              <div class="is-size-5 publication-authors" style="margin-top:0.5rem;">
+                <span class="author-block">CESI &mdash; CESI LINEACT &nbsp;|&nbsp; FUSION Project</span>
+              </div>
+
+              <div class="column has-text-centered" style="margin-top:1rem;">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fas fa-database"></i></span>
+                      <span>Datasets</span>
+                    </a>
                   </span>
-                  <span>Datasets</span>
-                </a>
+                  <span class="link-block">
+                    <a href="https://github.com/sunilmtma/Industrial_GS" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fab fa-github"></i></span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+
+    <!-- ═══════════════════  DATASET GENERATION PIPELINE  ═══════════════════ -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Dataset Generation Pipeline</h2>
+        <p class="has-text-centered" style="margin-bottom:1.5rem;color:#555;">
+          The pipeline consists of three coordinated stages: spatial calibration, synchronized data
+          collection with a ZED Mini stereo camera and an OptiTrack motion-capture system, and
+          automated digital twin generation inside Unity via ROS Bridge and the LOOPER trajectory
+          replayer.
+        </p>
+
+        <figure class="pipeline-figure">
+          <img src="static/images/pipeline.png"
+               alt="Three-stage dataset generation pipeline: Calibration, Data Collection, and Digital Twin Processing">
+          <figcaption>
+            <strong>Figure 1.</strong> Overview of the three-stage Industrial-GS dataset generation pipeline.
+            <em>Left</em>: calibration of R<sub>mocap</sub>, R<sub>ZED</sub>, and R<sub>object</sub> reference frames.
+            <em>Center</em>: data collection with and without MoCap visibility.
+            <em>Right</em>: physical twin RGBD recordings replayed in Unity to produce digital twin RGBD counterparts.
+          </figcaption>
+        </figure>
+
+        <div class="step-cards">
+          <div class="step-card calibration">
+            <h4><i class="fas fa-ruler-combined" style="margin-right:0.4rem;"></i>Step 1 — Calibration</h4>
+            <p>
+              Computes the rigid transformations between the motion-capture frame
+              (R<sub>mocap</sub>), the ZED Mini camera frame (R<sub>ZED</sub>), and the
+              object frame (R<sub>object</sub>). Known transformations are measured directly;
+              the object-to-camera transform is solved analytically.
+            </p>
+          </div>
+          <div class="step-card collection">
+            <h4><i class="fas fa-camera" style="margin-right:0.4rem;"></i>Step 2 — Data Collection</h4>
+            <p>
+              A ZED Mini camera captures synchronized RGB-D streams while an OptiTrack
+              system records 6-DoF pose ground truth. Two conditions are captured: MoCap
+              markers visible (recorded) and hidden (unrecorded), covering diverse
+              lighting and clutter scenarios.
+            </p>
+          </div>
+          <div class="step-card processing">
+            <h4><i class="fas fa-cube" style="margin-right:0.4rem;"></i>Step 3 — Digital Twin Generation</h4>
+            <p>
+              Physical twin trajectories are exported as ROS Bags (RGB, Depth, MoCap Pose,
+              IMU) and replayed inside a Unity simulation via ROS Bridge and LOOPER. The
+              simulation renders paired digital twin RGB-D frames, enabling domain-gap
+              studies between real and synthetic data.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Pipeline -->
+
+
+    <!-- ══════════════════════  DATASET SAMPLES  ══════════════════════ -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Dataset Samples</h2>
+        <p class="has-text-centered" style="margin-bottom:1.5rem;color:#555;">
+          Representative frames from the physical twin (real) and digital twin (synthetic)
+          subsets, annotated with ground-truth 6D poses and depth maps.
+        </p>
+        <div class="samples-grid">
+          <div class="sample-item">
+            <img src="static/images/carousel1.jpg"
+                 alt="Industrial object with 6D pose annotation" loading="lazy">
+            <p>Physical twin — pose annotation overlay</p>
+          </div>
+          <div class="sample-item">
+            <img src="static/images/carousel2.jpg"
+                 alt="3D reconstruction aligned to digital twin model" loading="lazy">
+            <p>3D reconstruction aligned to CAD model</p>
+          </div>
+          <div class="sample-item">
+            <img src="static/images/carousel3.jpg"
+                 alt="Physical twin vs digital twin side-by-side" loading="lazy">
+            <p>Physical twin vs. digital twin (RGB-D)</p>
+          </div>
+          <div class="sample-item">
+            <img src="static/images/carousel4.jpg"
+                 alt="Pose estimation benchmark results" loading="lazy">
+            <p>Benchmark pose estimation results</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Dataset Samples -->
+
+
+    <!-- ══════════════════════  PERSPECTIVES  ══════════════════════ -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop content-section">
+        <h2 class="section-title has-text-centered">Perspectives</h2>
+        <p style="margin-bottom:1.5rem;color:#555;">
+          Building on this dataset, we identify the following research directions that can
+          advance the state of the art in industrial 6D pose estimation and digital twin alignment.
+        </p>
+        <ul class="perspective-list">
+          <li>
+            <div class="item-icon icon-blue"><i class="fas fa-brain"></i></div>
+            <div class="item-text">
+              <strong>Foundation Models for Pose Estimation</strong>
+              <span>
+                Leveraging large vision-language models (e.g., SAM, DINOv2) as feature extractors
+                to achieve zero-shot or few-shot 6D pose estimation for unseen industrial objects,
+                reducing the need for object-specific retraining.
               </span>
-
-              <span class="link-block">
-                <a href="https://github.com/sunilmtma/Industrial_GS" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>Code</span>
-              </a>
-            </span>
-          </div>
-        </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-icon icon-green"><i class="fas fa-sync-alt"></i></div>
+            <div class="item-text">
+              <strong>Closing the Sim-to-Real Gap</strong>
+              <span>
+                Using domain randomization and physics-based rendering within Unity to generate
+                photorealistic synthetic data that minimises distribution shift when models are
+                transferred to real factory environments.
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="item-icon icon-orange"><i class="fas fa-network-wired"></i></div>
+            <div class="item-text">
+              <strong>Real-Time Digital Twin Synchronisation</strong>
+              <span>
+                Extending the pipeline towards online, low-latency synchronisation between a
+                physical robot manipulator and its digital counterpart, supporting predictive
+                maintenance and anomaly detection in smart manufacturing.
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="item-icon icon-purple"><i class="fas fa-object-group"></i></div>
+            <div class="item-text">
+              <strong>Multi-Object and Cluttered Scene Understanding</strong>
+              <span>
+                Expanding the dataset to densely cluttered industrial scenes with partial
+                occlusions and inter-object contact, benchmarking instance-level pose estimation
+                under realistic factory floor conditions.
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="item-icon icon-teal"><i class="fas fa-expand-arrows-alt"></i></div>
+            <div class="item-text">
+              <strong>Generalisation Across Industrial Domains</strong>
+              <span>
+                Collecting additional object categories (machined parts, electronic assemblies,
+                connectors) to create a large-scale benchmark that evaluates cross-category
+                generalisation of pose and reconstruction methods.
+              </span>
+            </div>
+          </li>
+        </ul>
       </div>
-    </div>
-  </div>
-</div>
-</section>
+    </section>
+    <!-- End Perspectives -->
 
 
-<!-- Teaser video -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Overview of the Industrial GS dataset pipeline: capturing industrial physical twin objects and generating corresponding digital twin representations for 6D pose estimation and 3D reconstruction benchmarks.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We present a novel dataset and methodology for 6D pose estimation and 3D reconstruction of industrial objects, designed to bridge the gap between physical twin and digital twin representations. Our dataset captures real-world industrial components under diverse conditions, paired with high-fidelity 3D digital twin models, enabling rigorous benchmarking of pose estimation and reconstruction algorithms in industrial settings. This work supports the FUSION project at CESI LINEACT, advancing the integration of physical and digital worlds for smart manufacturing applications.
-          </p>
-        </div>
+    <!-- ══════════════════════  CURRENT WORKS  ══════════════════════ -->
+    <section class="section">
+      <div class="container is-max-desktop content-section">
+        <h2 class="section-title has-text-centered">Current Works</h2>
+        <p style="margin-bottom:1.5rem;color:#555;">
+          Active research and development efforts within the FUSION project at CESI LINEACT.
+        </p>
+        <ul class="works-list-items">
+          <li>
+            <div class="item-icon icon-blue"><i class="fas fa-database"></i></div>
+            <div class="item-text">
+              <strong>
+                Industrial-GS Dataset v1.0
+                <span class="status-badge badge-complete">Complete</span>
+              </strong>
+              <span>
+                Full acquisition of synchronized RGB-D + MoCap sequences for the first
+                set of industrial objects. Data validation, calibration verification, and
+                format conversion to a standardised HDF5 / ROS Bag distribution package.
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="item-icon icon-green"><i class="fas fa-vial"></i></div>
+            <div class="item-text">
+              <strong>
+                Gaussian Splatting for Industrial 3D Reconstruction
+                <span class="status-badge badge-ongoing">Ongoing</span>
+              </strong>
+              <span>
+                Evaluating 3D Gaussian Splatting (3DGS) as a novel-view synthesis and
+                reconstruction backbone for industrial objects, assessing its accuracy
+                and real-time rendering performance compared to NeRF-based approaches.
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="item-icon icon-orange"><i class="fas fa-robot"></i></div>
+            <div class="item-text">
+              <strong>
+                6D Pose Estimation Benchmark
+                <span class="status-badge badge-ongoing">Ongoing</span>
+              </strong>
+              <span>
+                Running baseline evaluations of state-of-the-art pose estimators
+                (FoundPose, GigaPose, FoundationPose) on the Industrial-GS dataset,
+                establishing reference metrics for ADD, ADD-S, and 5°5cm scores.
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="item-icon icon-purple"><i class="fas fa-project-diagram"></i></div>
+            <div class="item-text">
+              <strong>
+                Unity Digital Twin Expansion
+                <span class="status-badge badge-ongoing">Ongoing</span>
+              </strong>
+              <span>
+                Extending the Unity simulation environment to support additional robot
+                models and background scenes, and integrating automatic material
+                randomisation to improve synthetic-to-real transfer performance.
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="item-icon icon-teal"><i class="fas fa-file-alt"></i></div>
+            <div class="item-text">
+              <strong>
+                Dataset Paper Submission
+                <span class="status-badge badge-planned">Planned</span>
+              </strong>
+              <span>
+                Preparation of a dataset paper including full protocol description,
+                calibration analysis, and baseline benchmark results for submission
+                to a computer vision venue (CVPR / ECCV / IROS).
+              </span>
+            </div>
+          </li>
+        </ul>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
+    <!-- End Current Works -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-          <img src="static/images/carousel1.jpg" alt="Dataset sample — industrial object with 6D pose annotation" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">
-            Industrial object captured with ground-truth 6D pose annotations.
-          </h2>
+    <!-- ══════════════════════  BIBTEX  ══════════════════════ -->
+    <section class="section hero is-light" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title" style="margin:0;">BibTeX</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text">Copy</span>
+          </button>
         </div>
-        <div class="item">
-          <img src="static/images/carousel2.jpg" alt="3D reconstruction result" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">
-            3D reconstruction output aligned with the corresponding digital twin model.
-          </h2>
-        </div>
-        <div class="item">
-          <img src="static/images/carousel3.jpg" alt="Physical twin vs digital twin comparison" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">
-            Side-by-side comparison of physical twin and digital twin representations.
-          </h2>
-        </div>
-        <div class="item">
-          <img src="static/images/carousel4.jpg" alt="Pose estimation benchmark results" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">
-            Pose estimation benchmark results across different industrial scenarios.
-          </h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End image carousel -->
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Supplementary Videos</h2>
-      <div id="results-carousel-video" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-      <iframe src="static/pdfs/sample.pdf" width="100%" height="550"></iframe>
-    </div>
-  </div>
-</section>
-<!-- End paper poster -->
-
-
-<!-- BibTex citation -->
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <div class="bibtex-header">
-      <h2 class="title">BibTeX</h2>
-      <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-        <i class="fas fa-copy"></i>
-        <span class="copy-text">Copy</span>
-      </button>
-    </div>
-    <pre id="bibtex-code"><code>@article{choudhary2024industrial,
+        <pre id="bibtex-code"><code>@article{choudhary2024industrial,
   title={6D Pose Estimation and 3D Reconstruction of Industrial Physical Twin and Digital Twin Datasets},
   author={Choudhary, Sunil and Asfaw, Mickyas-Tamiru and Laignel, Aristide and Ragot, Nicolas and Havard, Vincent and Dupuis, Yohan},
   institution={CESI LINEACT},
   year={2024}
 }</code></pre>
-  </div>
-</section>
-<!-- End BibTex citation -->
+      </div>
+    </section>
+    <!-- End BibTeX -->
 
+  </main>
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p>
+              Built with the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+              Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0 International License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+
+  <script>
+    function copyBibTeX() {
+      const code = document.getElementById('bibtex-code').innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.querySelector('.copy-text');
+        btn.textContent = 'Copied!';
+        setTimeout(() => { btn.textContent = 'Copy'; }, 2000);
+      });
+    }
+  </script>
 
 </body>
 </html>
