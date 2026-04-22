@@ -425,6 +425,48 @@
     <!-- End Dataset Samples -->
 
 
+    <!-- ══════════════════════  PT / DT ALIGNMENT  ══════════════════════ -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Physical Twin &amp; Digital Twin Alignment</h2>
+        <p class="has-text-centered" style="margin-bottom:1.5rem;color:#555;">
+          Each row shows one industrial object: the real-world <strong>Physical Twin (PT)</strong> captured
+          by the ZED Mini, its corresponding <strong>Digital Twin (DT)</strong> rendered in Unity, and
+          the <strong>Superimposition</strong> that reveals the 6D pose alignment quality
+          (red bounding box highlights residual misalignment).
+        </p>
+
+        <figure class="pipeline-figure">
+          <img src="static/images/pt_dt_comparison.png"
+               alt="Side-by-side comparison of Physical Twin, Digital Twin, and Superimposition for five industrial objects"
+               loading="lazy">
+          <figcaption>
+            <strong>Figure 2.</strong> Physical Twin vs. Digital Twin alignment across five object categories:
+            wheeled cart, robot arm, AMR, AGV, and steering-wheel fixture.
+            Superimposition column shows the PT frame with the DT model overlaid — red boxes highlight regions of residual pose error.
+          </figcaption>
+        </figure>
+
+        <!-- Column headers legend -->
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;margin-top:1.5rem;text-align:center;">
+          <div style="background:#fff;border-radius:6px;padding:0.75rem;box-shadow:0 1px 6px rgba(0,0,0,0.07);border-top:3px solid #3a6fd8;">
+            <strong style="font-size:0.9rem;">Physical Twin (PT)</strong>
+            <p style="font-size:0.82rem;color:#555;margin-top:0.3rem;">Real RGBD frames captured by the ZED Mini stereo camera in the lab environment.</p>
+          </div>
+          <div style="background:#fff;border-radius:6px;padding:0.75rem;box-shadow:0 1px 6px rgba(0,0,0,0.07);border-top:3px solid #16a34a;">
+            <strong style="font-size:0.9rem;">Digital Twin (DT)</strong>
+            <p style="font-size:0.82rem;color:#555;margin-top:0.3rem;">Synthetic RGBD frames rendered in Unity by replaying the MoCap trajectory via LOOPER.</p>
+          </div>
+          <div style="background:#fff;border-radius:6px;padding:0.75rem;box-shadow:0 1px 6px rgba(0,0,0,0.07);border-top:3px solid #e07b39;">
+            <strong style="font-size:0.9rem;">Superimposition</strong>
+            <p style="font-size:0.82rem;color:#555;margin-top:0.3rem;">DT model overlaid on the PT frame using the estimated 6D pose; red boxes indicate alignment error.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End PT / DT Alignment -->
+
+
     <!-- ══════════════════════  PERSPECTIVES  ══════════════════════ -->
     <section class="section hero is-light">
       <div class="container is-max-desktop content-section">
